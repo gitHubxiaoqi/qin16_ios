@@ -45,7 +45,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [self sendPost];
-    _countLab.text=[NSString stringWithFormat:@"您有%d张代金券可使用",totalCount];
+    
 }
 - (void)viewDidLoad
 {
@@ -189,6 +189,7 @@
         [self GetCompanyListData];
         [_tableView reloadData];
         
+        _countLab.text=[NSString stringWithFormat:@"您有%d张代金券可使用",totalCount];
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
         [_tableView headerEndRefreshing];
     });
