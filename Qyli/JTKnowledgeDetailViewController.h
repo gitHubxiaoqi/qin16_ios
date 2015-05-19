@@ -10,4 +10,5 @@
 
 @interface JTKnowledgeDetailViewController : UIViewController
 @property(nonatomic,strong)JTSortModel * sortmodel;
+
 @end
